@@ -9,16 +9,30 @@
 </head>
 <body class="bg-light">
 
-<?php 
-include "navbar.php";
-?>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Kasum</a>
 
-<?php
-$nama    = "Kasum";
-$umur    = "37";
-$sekolah = "Guru Informatika";
-?>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
+                <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                <li class="nav-item"><a class="nav-link" href="karyaku.html">Karyaku</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="hubungi.html">Hubungi</a></li>
+                <li class="nav-item"><a class="nav-link" href="sosmed.html">Sosmed</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- CONTENT -->
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
@@ -36,11 +50,11 @@ $sekolah = "Guru Informatika";
                         bagi peserta didik.
                     </p>
 
-                    <p class="fs-5">Halo, nama saya <strong><?= $nama ?></strong></p>
-                    <p class="fs-5">Umur saya <strong><?= $umur ?> tahun</strong></p>
-                    <p class="fs-5">Saya seorang <strong><?= $sekolah ?></strong></p>
+                    <p class="fs-5">Halo, nama saya <strong>Kasum</strong></p>
+                    <p class="fs-5">Umur saya <strong>37 tahun</strong></p>
+                    <p class="fs-5">Saya seorang <strong>Guru Informatika</strong></p>
 
-                    <a href="profil.php" class="btn btn-primary mt-3">
+                    <a href="profil.html" class="btn btn-primary mt-3">
                         Masuk ke Profil Saya
                     </a>
                 </div>
